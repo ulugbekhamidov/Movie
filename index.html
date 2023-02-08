@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cedarville+Cursive&family=Livvic:wght@600;700&family=M+PLUS+Rounded+1c:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;700&family=Oleo+Script+Swash+Caps&family=Paytone+One&family=Permanent+Marker&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Quicksand:wght@700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo-site">MOVIES</h1>
+
+        <!-- from -->
+        <form class="form-input-box" data-form>
+            <input class="input-box" type="search" data-form-search placeholder="Search">
+            <input class="input-box" type="text" data-form-title placeholder="Title">
+            <input class="input-box" type="text" data-form-lang placeholder="Language">
+            <input class="input-box" type="text" data-form-description placeholder="Description">
+            <input class="input-box" type="text" data-form-img-url placeholder="Image Url:">
+            <button class="input-box input-add" type="submit" data-add-btn>Add</button>
+        </form>
+        <!-- from end -->
+        <div class="movie-item-box" data-box-movie></div>
+        <!-- template -->
+        <template data-movie-template>
+            <div class="movie-item">
+                <img class="movie-item__new" src="./img/new.gif" alt="new">
+                <div>
+                    <img class="movie-item__img" width="220" height="340">
+                </div>
+                <div class="movie-card">
+                    <h3 class="movie-card__title"></h3>
+                </div>
+            </div>
+        </template>
+        <!-- template -->
+
+        <!-- <ul data-list></ul> -->
+    </div>
+
+
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
