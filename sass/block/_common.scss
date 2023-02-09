@@ -102,8 +102,7 @@ body {
 .movie-item {
   width: 290px;
   height: 450px;
-  // background: var((--bg-item-background));
-  background-color: lighten($color: --bg-item-background, $amount: 3%);
+  background: var((--bg-item-background));
   border-radius: 4px;
   margin: 30px;
 }
