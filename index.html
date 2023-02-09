@@ -16,18 +16,22 @@
 
 <body>
     <div class="container">
-        <h1 class="logo-site">MOVIES</h1>
+        <a class="for-text-d" href="#"><h1 class="logo-site">MOVIES</h1></a>
 
-        <!-- from -->
-        <form class="form-input-box" data-form>
-            <input class="input-box" type="search" data-form-search placeholder="Search">
-            <input class="input-box" type="text" data-form-title placeholder="Title">
-            <input class="input-box" type="text" data-form-lang placeholder="Language">
-            <input class="input-box" type="text" data-form-description placeholder="Description">
-            <input class="input-box" type="text" data-form-img-url placeholder="Image Url:">
-            <button class="input-box input-add" type="submit" data-add-btn>Add</button>
-        </form>
-        <!-- from end -->
+        <!-- form -->
+        <div class="box-input">
+            <form data-input-search>
+                <input class="input-box" type="search" data-form-search placeholder="Search">
+            </form>
+            <form class="form-input-box" data-form>
+                <input class="input-box" type="text" data-form-title placeholder="Title">
+                <input class="input-box" type="text" data-form-lang placeholder="Language">
+                <input class="input-box" type="text" data-form-description placeholder="Description">
+                <input class="input-box" type="text" data-form-img-url placeholder="Image Url:">
+                <button class="input-box input-add" type="submit" data-add-btn>Add</button>
+            </form>
+        </div>
+        <!-- form end -->
         <div class="movie-item-box" data-box-movie></div>
         <!-- template -->
         <template data-movie-template>
@@ -45,8 +49,6 @@
 
         <!-- <ul data-list></ul> -->
     </div>
-
-
     <script src="./js/movies.js"></script>
     <script src="./js/main.js"></script>
 </body>

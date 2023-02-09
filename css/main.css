@@ -1,7 +1,7 @@
 :root {
   --primary-body-color: #161d25;
   --text-color: #a0b5d6;
-  --bg-card-background:#445269;
+  --bg-card-background: #445269;
   --bg-item-background: #151f31;
 }
 
@@ -15,10 +15,21 @@
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 body {
   background-color: var(--primary-body-color);
+}
+
+.box-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo-site {
@@ -32,6 +43,10 @@ body {
   font-weight: 700;
   margin-top: 25px;
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15), 7px 14px 4px rgba(82, 100, 128, 0.93);
+}
+
+.for-text-d {
+  text-decoration: none;
 }
 
 .form-input-box {
@@ -79,15 +94,15 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 50px;
-  padding: 80px 0 40px;
 }
 
 .movie-item {
   width: 290px;
   height: 450px;
   background: var(--bg-item-background);
+  background-color: lig;
   border-radius: 4px;
+  margin: 30px;
 }
 
 .movie-item__new {
